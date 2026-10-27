@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · MealCal 食历</title>
+<style>
+  :root {
+    --ink: #24312a; --muted: #5b6a60; --bg: #fafcf8;
+    --card: #ffffff; --rule: #e4eae0; --accent: #2e7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e5ebe5; --muted: #9faca3; --bg: #141a15;
+            --card: #1c231d; --rule: #2b352d; --accent: #58a878; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2.5rem 0 .75rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .9rem; }
+  .contact {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 1rem 1.25rem; margin: 1.5rem 0;
+  }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 1.25rem; }
+  dd { margin: .25rem 0 0; color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0 2.5rem; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language"><a href="#en">English</a> · <a href="#zh-Hans">简体中文</a> · <a href="#zh-Hant">繁體中文</a></nav>
+<section lang="en" id="en">
+<h1>MealCal Support</h1>
+<p class="sub">Plan a week of meals, get the shopping list.</p>
+<div class="contact"><strong>Email:</strong> <a href="mailto:michaelyu230513@gmail.com">michaelyu230513@gmail.com</a><br>Include your app version, iOS version, device model and steps to reproduce the problem. Please omit private information you do not want to share.</div>
+<h2>Common questions</h2>
+<dl>
+<dt>Where is my data stored?</dt><dd>In the app's local storage on your iPhone. MealCal does not upload it. You control exported files, shared copies and device backups; see the <a href="privacy.html#en">privacy policy</a>.</dd>
+<dt>How do I move my data to a new phone?</dt><dd>Meal Plan → More actions → Settings → Export writes a JSON backup. On the new phone, Import restores it after confirmation. Import replaces dishes, plans, templates, shopping lists and settings. Older backups without templates clear existing templates. Export a current backup first if you need to keep it.</dd>
+<dt>How does the shopping list update?</dt><dd>Opening Shopping first generates a list for a week with meals. Later plan changes show an “Update list” notice. Updating preserves manual items. Matching checked items stay checked when quantities stay the same or decrease; increased quantities return to the to-buy list and show the old and new amount for checking. Items no longer needed are removed.</dd>
+<dt>How do I reuse a week?</dt><dd>Meal Plan → More actions → Save as meal plan template saves dishes and diners for all seven days. Open Meal plan templates to preview and apply it. Applying replaces the target week's meals, including empty meals; occupied weeks ask for confirmation. Update the shopping list afterwards.</dd>
+<dt>How do I share a plan?</dt><dd>Tap the share icon in Meal Plan, choose Image or Text, then share. Recipients do not need MealCal. Their replies arrive in the messaging app you chose. The shared plan is a fixed copy, so share again after edits. Shopping also supports text sharing.</dd>
+<dt>Why does an ingredient say “to taste”?</dt><dd>Seasonings and aromatics are listed once without adding quantities across dishes. Edit any dish's ingredient amounts and base servings to match how you cook.</dd>
+<dt>Are cooking instructions included?</dt><dd>No. The built-in dishes provide editable ingredient lists for planning and shopping, not cooking steps.</dd>
+<dt>I changed the first day of the week.</dt><dd>Weeks are regrouped around the new start day. A plan can span two weeks, but each meal stays on its original date.</dd>
+<dt>Does MealCal sync between devices?</dt><dd>This version does not sync. Use JSON export/import to move data. The iOS app is a one-time purchase with no subscriptions or in-app purchases.</dd>
+</dl>
+</section>
+<hr>
+<section lang="zh-Hans" id="zh-Hans">
+<h1>食历 使用支持</h1>
+<p class="sub">选好一周吃什么，自动算出要买什么。</p>
+<div class="contact"><strong>邮箱：</strong><a href="mailto:michaelyu230513@gmail.com">michaelyu230513@gmail.com</a><br>请附上 App 版本、iOS 版本、设备型号及复现步骤，不必发送不愿分享的私人信息。</div>
+<h2>常见问题</h2>
+<dl>
+<dt>我的数据存在哪里？</dt><dd>保存在 iPhone 的 App 本地存储中，食历不会上传。导出文件、分享副本和设备备份由你自行管理，详见<a href="privacy.html#zh-Hans">隐私政策</a>。</dd>
+<dt>换手机如何迁移？</dt><dd>周计划 → 更多操作 → 设置 → 导出数据，保存 JSON 备份；新手机导入，经确认后恢复。导入覆盖菜品、周计划、排餐模板、采购清单和设置。旧备份不含模板时会清空现有模板，如需保留当前数据请先导出。</dd>
+<dt>采购清单如何更新？</dt><dd>有排餐的周首次进入采购页时自动生成清单。之后修改排餐会显示“更新清单”提示。更新保留手动项；匹配项用量不变或减少时继承已购状态，用量增加时恢复待买并显示新旧用量供核对。不再需要的生成项会删除。</dd>
+<dt>如何复用一周菜单？</dt><dd>周计划 → 更多操作 → 保存为排餐模板，保存七天的菜品和人数。在排餐模板中预览并应用到目标周。应用替换整周，包括模板中的空餐；已有排餐时会要求确认。应用后请更新采购清单。</dd>
+<dt>如何分享排餐？</dt><dd>点击周计划的分享图标，选择图片或文字，再通过系统面板发送。对方无需安装食历，修改意见在你选择的聊天工具中回复。副本不会自动更新，修改后重新分享即可。采购页也支持纯文字分享。</dd>
+<dt>为什么有的食材显示“适量”？</dt><dd>调味料、辛香料只列一次，不把每道菜的数量累加。你可以编辑菜品的食材用量和基准人数，使其符合自己的做法。</dd>
+<dt>包含做菜步骤吗？</dt><dd>本版提供用于排餐、采购的可编辑食材清单，不含烹饪步骤。</dd>
+<dt>改了周起始日，排餐位置变了。</dt><dd>周的边界会重新划分，同一计划可能分到两周，但每餐仍在原本的日期。</dd>
+<dt>支持多设备同步吗？</dt><dd>本版不支持，请用 JSON 备份迁移数据。iOS 版一次购买，无订阅、无内购。</dd>
+</dl>
+</section>
+<hr>
+<section lang="zh-Hant" id="zh-Hant">
+<h1>食曆 使用支援</h1>
+<p class="sub">選好一週吃什麼，自動算出要買什麼。</p>
+<div class="contact"><strong>電子郵件：</strong><a href="mailto:michaelyu230513@gmail.com">michaelyu230513@gmail.com</a><br>請附上 App 版本、iOS 版本、裝置型號及重現步驟，不必傳送不願分享的私人資訊。</div>
+<h2>常見問題</h2>
+<dl>
+<dt>我的資料存在哪裡？</dt><dd>保存在 iPhone 的 App 本機儲存空間中，食曆不會上傳。匯出檔案、分享副本和裝置備份由你自行管理，詳見<a href="privacy.html#zh-Hant">隱私權政策</a>。</dd>
+<dt>換手機如何移轉？</dt><dd>週計畫 → 更多操作 → 設置 → 匯出資料，儲存 JSON 備份；新手機匯入，經確認後還原。匯入覆寫菜色、週計畫、排餐範本、採購清單和設定。舊備份不含範本時會清空現有範本，如需保留目前資料請先匯出。</dd>
+<dt>採購清單如何更新？</dt><dd>有排餐的週首次進入採購頁時自動建立清單。之後修改排餐會顯示更新清單提示。更新保留自訂項目；相符項目用量不變或減少時保留已購狀態，用量增加時恢復待買並顯示新舊用量供核對。不再需要的產生項目會刪除。</dd>
+<dt>如何重用一週菜單？</dt><dd>週計畫 → 更多操作 → 儲存為排餐範本，儲存七天的菜色和人數。在排餐範本中預覽並套用到目標週。套用會替換整週，包括範本中的空餐；已有排餐時會要求確認。套用後請更新採購清單。</dd>
+<dt>如何分享排餐？</dt><dd>點選週計畫的分享圖示，選擇圖片或文字，再透過系統選單傳送。對方無須安裝食曆，修改意見在你選擇的通訊軟體中回覆。副本不會自動更新，修改後重新分享即可。採購頁也支援純文字分享。</dd>
+<dt>為什麼有的食材顯示「適量」？</dt><dd>調味料、辛香料只列一次，不把每道菜的數量累加。你可以編輯菜色的食材用量和基準人數，使其符合自己的做法。</dd>
+<dt>包含做菜步驟嗎？</dt><dd>本版提供用於排餐、採購的可編輯食材清單，不含烹飪步驟。</dd>
+<dt>改了每週起始日，排餐位置變了。</dt><dd>週的邊界會重新劃分，同一計畫可能分到兩週，但每餐仍在原本的日期。</dd>
+<dt>支援多裝置同步嗎？</dt><dd>本版不支援，請用 JSON 備份移轉資料。iOS 版一次購買，無訂閱、無 App 內購買。</dd>
+</dl>
+</section>
+<footer>MealCal · 食历 · 食曆 · <a href="privacy.html">Privacy / 隐私 / 隱私權</a></footer>
+</main>
+</body>
+</html>
